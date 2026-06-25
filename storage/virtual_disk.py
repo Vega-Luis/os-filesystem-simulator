@@ -1,28 +1,3 @@
-"""
-storage/virtual_disk.py
-Responsable: Persona B
-
-Maneja el archivo físico que representa el disco virtual, dividido en
-sectores, con asignación enlazada y estrategia First Fit.
-
-Formato del archivo .bin:
-
-    [HEADER][SECTOR 0][SECTOR 1]...[SECTOR N-1]
-
-Header (16 bytes, fijo):
-    - 8 bytes: sector_count (entero, big endian)
-    - 8 bytes: sector_size  (entero, big endian)
-
-Cada sector mide exactamente sector_size bytes en disco. El contenido de
-un archivo se parte en chunks de sector_size y se escribe uno por sector,
-en el orden que indique la lista de sectores recibida (que ya viene
-encadenada lógicamente por SectorManager).
-
-La cadena de encadenamiento (qué sector sigue a cuál) se maneja en
-memoria, en SectorManager — el enunciado permite esto explícitamente.
-
-Ver docs/SHARED.md para el contrato completo con filesystem/.
-"""
 
 import os
 from typing import List

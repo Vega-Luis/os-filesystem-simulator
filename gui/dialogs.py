@@ -1,12 +1,3 @@
-"""
-gui/dialogs.py
-Responsable: Persona B
-
-Diálogos reutilizables: formularios de entrada y confirmaciones.
-Todos se basan en tk.Toplevel para no bloquear con los popups feos de
-por defecto de tkinter.messagebox cuando necesitamos más de un campo.
-"""
-
 import tkinter as tk
 from tkinter import ttk, messagebox, simpledialog, filedialog
 

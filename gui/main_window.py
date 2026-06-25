@@ -1,20 +1,3 @@
-"""
-gui/main_window.py
-Responsable: Persona B
-
-Ventana principal. Layout:
-
-    [ Ruta actual: /Documentos/Fotos                              ]
-    [-------------------------------------------------------------]
-    [  TREE (panel izq.)   |   Directorio actual (panel der.)     ]
-    [                       |                                       ]
-    [-------------------------------------------------------------]
-    [ MKDIR | FILE | CD | ModFILE | Ver | CoPY | MoVer | RM | FIND ]
-
-Depende únicamente de la interfaz acordada en docs/SHARED.md (mkdir,
-create_file, list_dir, change_dir, tree, etc.) — funciona igual con
-MockFS o con el FileSystem real, sin tocar este archivo.
-"""
 
 import tkinter as tk
 from tkinter import ttk

@@ -1,17 +1,4 @@
-"""
-Punto de entrada de la aplicación.
 
-Conecta las tres piezas del proyecto:
-    VirtualDisk  -> el disco físico con sectores (storage/)
-    FileSystem   -> la lógica de archivos/directorios (file_system/)
-    MainWindow   -> la interfaz gráfica con Tkinter (gui/)
-
-CREATE se pide ahora de forma interactiva: al iniciar la aplicación se
-muestra un diálogo donde el usuario indica la cantidad de sectores y el
-tamaño de cada sector. Si ya existe un disco virtual guardado de una
-sesión anterior, se avisa y se reabre con su tamaño original (el
-enunciado exige que el archivo de disco no se elimine al cerrar la app).
-"""
 
 import os
 import tkinter as tk

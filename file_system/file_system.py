@@ -1,11 +1,4 @@
-"""
-file_system/file_system.py
 
-Basado en la estructura original de Persona A (árbol de FileNode), con
-las firmas ajustadas al contrato (docs/SHARED.md) e integrado con
-VirtualDisk para que el contenido de los archivos viva en sectores
-reales, asignados con First Fit y encadenados (storage/virtual_disk.py).
-"""
 
 import fnmatch
 

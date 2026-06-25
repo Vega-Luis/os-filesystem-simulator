@@ -1,13 +1,4 @@
-"""
-gui/mocks.py
-Responsable: Persona B
 
-MockFS simula el comportamiento de FileSystem (filesystem/filesystem.py)
-respetando exactamente el contrato en docs/CONTRATO.md, para poder
-desarrollar la GUI sin esperar a que Persona A termine el módulo real.
-
-Cuando el FileSystem real esté listo, basta cambiar el import en main.py.
-"""
 
 from file_system.exceptions import (
     DuplicateNameError,

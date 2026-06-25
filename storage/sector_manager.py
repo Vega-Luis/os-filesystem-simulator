@@ -1,11 +1,3 @@
-"""
-storage/sector_manager.py
-Responsable: Persona B
-
-Maneja qué sectores están libres/ocupados y la cadena de encadenamiento
-(asignación enlazada) de cada archivo. Todo en memoria, tal como permite
-el enunciado ("el puntero no es necesario que lo tengan en el mismo sector").
-"""
 
 from typing import List, Optional, Dict
 
