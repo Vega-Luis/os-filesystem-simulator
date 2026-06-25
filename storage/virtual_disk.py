@@ -1,4 +1,7 @@
 """
+storage/virtual_disk.py
+Responsable: Persona B
+
 Maneja el archivo físico que representa el disco virtual, dividido en
 sectores, con asignación enlazada y estrategia First Fit.
 
@@ -15,6 +18,10 @@ un archivo se parte en chunks de sector_size y se escribe uno por sector,
 en el orden que indique la lista de sectores recibida (que ya viene
 encadenada lógicamente por SectorManager).
 
+La cadena de encadenamiento (qué sector sigue a cuál) se maneja en
+memoria, en SectorManager — el enunciado permite esto explícitamente.
+
+Ver docs/SHARED.md para el contrato completo con filesystem/.
 """
 
 import os

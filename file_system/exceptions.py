@@ -21,3 +21,8 @@ class PathNotFoundError(Exception):
 class InvalidNameError(Exception):
     """Nombre de archivo/directorio inválido (vacío, caracteres no permitidos, etc.)."""
     pass
+
+
+class NotEmptyError(Exception):
+    """Se intentó eliminar un directorio no vacío sin pedir borrado recursivo."""
+    pass

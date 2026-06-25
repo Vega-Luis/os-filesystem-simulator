@@ -1,4 +1,7 @@
 """
+tests/test_disk.py
+Pruebas de VirtualDisk y SectorManager.
+
 Correr con: python -m pytest tests/test_disk.py -v
 o simplemente: python tests/test_disk.py
 """

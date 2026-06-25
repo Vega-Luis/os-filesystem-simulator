@@ -1,4 +1,5 @@
 from datetime import datetime
+import os
 
 
 class FileNode:
@@ -10,6 +11,15 @@ class FileNode:
         self.is_directory = is_directory
         self.children = [] if is_directory else None
         self.parent = None
+        # Nuevo: sectores en disco donde vive el contenido de este archivo.
+        # Vacío para directorios (no ocupan sectores de contenido).
+        self.sectors = []
+
+    @property
+    def extension(self):
+        if self.is_directory or "." not in self.name:
+            return ""
+        return self.name.rsplit(".", 1)[1]
 
     def add_child(self, child_node):
         if not self.is_directory:
